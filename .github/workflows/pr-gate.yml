@@ -13,8 +13,8 @@ jobs:
         os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
     steps:
-      - uses: actions/checkout@V7 # tag (v7.0.1) or SHA-ID
-      - uses: actions/setup-python@v7 # tag (v7.0.0) or SHA-ID
+      - uses: actions/checkout@v7.0.1 # tag (v7.0.1) or SHA-ID
+      - uses: actions/setup-python@v7.0.0 # tag (v7.0.0) or SHA-ID
         with:
           python-version: '3.12'
       - name: Run the check
